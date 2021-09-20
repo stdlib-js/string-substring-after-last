@@ -52,7 +52,7 @@ npm install @stdlib/string-substring-after-last
 var substringAfterLast = require( '@stdlib/string-substring-after-last' );
 ```
 
-#### substringAfterLast( str, search\[, fromIndex=+Infinity] ) 
+#### substringAfterLast( str, search\[, fromIndex] ) 
 
 Returns the part of a string after the last occurrence of a specified substring.
 
@@ -154,7 +154,7 @@ Options:
   -h,    --help                Print this message.
   -V,    --version             Print the package version.
          --search string       Search string.
-         --fromIndex int       Backwards-search start index. Default: +Infinity.
+         --from-index int      Index at which to start the search.
 ```
 
 </section>
