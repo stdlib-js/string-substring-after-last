@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2021 The Stdlib Authors.
@@ -16,27 +16,17 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 4.1
 
-// MODULES //
-
-var isInteger = require( '@stdlib/assert-is-integer' ).isPrimitive;
-var isString = require( '@stdlib/assert-is-string' ).isPrimitive;
-var format = require( '@stdlib/error-tools-fmtprodmsg' );
-
-
-// MAIN //
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@main/index.d.ts"/>
 
 /**
 * Returns the part of a string after the last occurrence of a specified substring.
 *
-* @param {string} str - input string
-* @param {string} search - search value
-* @param {integer} [fromIndex=str.length] - index of last character to be considered beginning of a match
-* @throws {TypeError} first argument must be a string
-* @throws {TypeError} second argument must be a string
-* @throws {TypeError} third argument must be an integer
-* @returns {string} substring
+* @param str - input string
+* @param search - search value
+* @param fromIndex - index of last character to be considered beginning of a match (default: `str.length`)
+* @returns substring
 *
 * @example
 * var out = substringAfterLast( 'beep boop', 'b' );
@@ -62,29 +52,9 @@ var format = require( '@stdlib/error-tools-fmtprodmsg' );
 * var out = substringAfterLast( 'beep boop baz', 'p b', 6 );
 * // returns 'oop baz'
 */
-function substringAfterLast( str, search, fromIndex ) {
-	var idx;
-	if ( !isString( str ) ) {
-		throw new TypeError( format( '1Pb3F,Ex', str ) );
-	}
-	if ( !isString( search ) ) {
-		throw new TypeError( format( '1Pb39,Ey', search ) );
-	}
-	if ( arguments.length > 2 ) {
-		if ( !isInteger( fromIndex ) ) {
-			throw new TypeError( format( '1Pb2m,L9', fromIndex ) );
-		}
-		idx = str.lastIndexOf( search, fromIndex );
-	} else {
-		idx = str.lastIndexOf( search );
-	}
-	if ( idx === -1 ) {
-		return '';
-	}
-	return str.substring( idx+search.length );
-}
+declare function substringAfterLast( str: string,  search: string, fromIndex?: number ): string; // tslint:disable-line:max-line-length
 
 
 // EXPORTS //
 
-module.exports = substringAfterLast;
+export = substringAfterLast;
