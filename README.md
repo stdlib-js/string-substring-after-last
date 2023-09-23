@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import substringAfterLast from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-substring-after-last@esm/index.mjs';
+import substringAfterLast from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-substring-after-last@v0.1.0-esm/index.mjs';
 ```
 
 #### substringAfterLast( str, search\[, fromIndex] ) 
@@ -107,7 +107,7 @@ var out = substringAfterLast( str, 'b', 3 );
 <body>
 <script type="module">
 
-import substringAfterLast from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-substring-after-last@esm/index.mjs';
+import substringAfterLast from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-substring-after-last@v0.1.0-esm/index.mjs';
 
 var str = 'To be, or not to be, that is the question.';
 var out = substringAfterLast( str, ', ' );
