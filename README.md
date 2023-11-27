@@ -72,7 +72,7 @@ The [branches.md][branches-url] file summarizes the available branches and displ
 var substringAfterLast = require( '@stdlib/string-substring-after-last' );
 ```
 
-#### substringAfterLast( str, search\[, fromIndex] ) 
+#### substringAfterLast( str, search\[, fromIndex] )
 
 Returns the part of a string after the last occurrence of a specified substring.
 
